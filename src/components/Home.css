@@ -1,0 +1,79 @@
+/* Home Section */
+#home {
+  background-color: #0d0d0d;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.box-container {
+  animation: fadeIn 1.5s ease-in-out;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent light background */
+  background-color: #000000;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  max-width: 600px;
+}
+
+.heading {
+  color: #01579b; /* Deep blue color for heading */
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.message-container {
+  font-size: 2rem;
+  background-color: #121212; /* Darker text color */
+  margin-top: 20px;
+}
+
+.message {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #0277bd; /* Deep blue border for typing effect */
+  animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Fade-out when deleting */
+.message-deleting {
+  animation: fadeOut 1s ease-in-out;
+}

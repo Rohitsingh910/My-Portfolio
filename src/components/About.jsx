@@ -59,16 +59,17 @@ const About = () => {
               </button>
             </div>
             {showResume && (
-              <div className="resume-box" data-aos="fade-up">
-                <iframe
-                 src={`${import.meta.env.BASE_URL}Rohit_Resume.pdf`}
-                   title="Rohit Resume"                        width="100%"
-                   height="500px"
-                   style={{ border: "none" }}
-                  />
+            <div className="resume-box" data-aos="fade-up">
+              <iframe
+                src="/Rohit_Resume.pdf"
+                title="Rohit Resume"
+                width="100%"
+                height="500px"
+                style={{ border: "none" }}
+              />
+            </div>
+          )}
 
-              </div>
-            )}
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ const About = () => {
                 Tailwind CSS, Git & GitHub.
               </p>
               <p>
-                <strong>Education:</strong> B.E. in Computer Science, Dr. Bhimrao Ambedkar Univerity, Agra, India
+                <strong>Education:</strong> Bachelor of Engineering in Computer Science, Dr. Bhimrao Ambedkar Univerity, Agra, India
               </p>
               <p>
                 <strong>Course:</strong> NPTEL: Data Structures & Algorithms using Java – 71% 
@@ -61,7 +61,7 @@ const About = () => {
             {showResume && (
               <div className="resume-box" data-aos="fade-up">
                 <iframe
-                 src={`${import.meta.env.BASE_URL}Rohit-Resume.pdf`}
+                 src={`${import.meta.env.BASE_URL}Rohit_Resume.pdf`}
                    title="Rohit Resume"                        width="100%"
                    height="500px"
                    style={{ border: "none" }}

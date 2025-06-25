@@ -13,7 +13,7 @@ const Projects = () => {
      {
        title: "Portfolio Website",
        description: "My personal portfolio website showcasing my skills and projects.",
-       link: "https://my-portfolio-git-main-amrit22octs-projects.vercel.app",
+       link: "https://rohitsingh910.github.io/My-Portfolio/",
      },
 
      {

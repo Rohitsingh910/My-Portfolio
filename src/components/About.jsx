@@ -61,12 +61,12 @@ const About = () => {
             {showResume && (
               <div className="resume-box" data-aos="fade-up">
                 <iframe
-                  src="/Rohit-Resume.pdf"
-                  title="Rohit Resume"
-                  width="100%"
-                  height="500px"
-                  style={{ border: "none" }}
-                />
+                 src={`${import.meta.env.BASE_URL}Rohit-Resume.pdf`}
+                   title="Rohit Resume"                        width="100%"
+                   height="500px"
+                   style={{ border: "none" }}
+                  />
+
               </div>
             )}
           </div>

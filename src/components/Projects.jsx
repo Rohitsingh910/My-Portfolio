@@ -43,7 +43,7 @@ const Projects = () => {
     {
       title: "Car rental Service Website",
       description: "A real-time Car Rental Service application using React",
-      link: "https://github.com/Rohitsingh910/Car-rental-website",
+      link: "https://rohitsingh910.github.io/Car-rental-website/",
     },
    // {
      // title: "Real-Time Chat App",

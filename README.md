@@ -23,25 +23,25 @@ graph TD
     classDef deploy fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#fff;
 
     %% Data Configuration Layer
-    subgraph Data Layer
+    subgraph DL ["Data Layer"]
         A["portfolio.js <br> (Profile Details, Projects, Skills, Internships)"]:::data
     end
 
     %% UI Components & Logic Layer
-    subgraph Frontend Logic (React + Vite)
+    subgraph FL ["Frontend Logic (React + Vite)"]
         B["Navbar.jsx & Footer.jsx <br> (Dynamic Socials/Resumes)"]:::src
         C["useScrollSpy.js <br> (Scroll spy active sections)"]:::src
         D["Interactive Sections <br> (Hero, About, Skills, Projects, Experience, Contact)"]:::src
     end
 
     %% Compilation Layer
-    subgraph Build Pipeline
+    subgraph BP ["Build Pipeline"]
         E["Vite Compiler <br> (Asset optimization & Minification)"]:::build
         F["dist/ <br> (Static HTML, CSS, and JS Assets)"]:::build
     end
 
     %% Deployment Target
-    subgraph Production Deployment
+    subgraph PD ["Production Deployment"]
         G["GitHub Pages <br> (Live Website Hosting)"]:::deploy
     end
 

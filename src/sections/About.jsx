@@ -112,21 +112,21 @@ px-4
                   <div className="text-center">
                     <div
                       className="
-w-44 h-56
-sm:w-52 sm:h-64
-lg:w-64 lg:h-[300px]
+w-52 h-52
+sm:w-60 sm:h-60
+lg:w-64 lg:h-64
 mx-auto
 mb-7
-rounded-3xl
+rounded-full
 overflow-hidden
 border-2 border-cyan-500
-shadow-[0_0_50px_rgba(34,211,238,0.3)]
+shadow-[0_0_50px_rgba(34,211,238,0.35)]
 "
                     >
                       <img
                         src={personalInfo.avatar}
                         alt="Profile Pic"
-                        className="w-full h-full object-cover object-top"
+                        className="w-full h-full object-cover object-center"
                       />
                     </div>
 

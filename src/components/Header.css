@@ -1,0 +1,174 @@
+/* General Navbar Styles */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.1); /* clean transparent look */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 3.5rem;
+  transition: all 0.4s ease-in-out;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Navbar on Scroll */
+.custom-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+}
+
+/* Navbar Brand */
+.custom-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffcc;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.custom-brand:hover {
+  transform: scale(1.1);
+  color: #ffcc00;
+}
+
+/* Navbar Links */
+.custom-nav-links .nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.custom-nav-links .nav-link:hover {
+  color: #00ffcc;
+  transform: scale(1.05);
+}
+
+.custom-nav-links .nav-link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #00ffcc;
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s ease;
+}
+
+.custom-nav-links .nav-link:hover::before {
+  width: 100%;
+}
+
+/* Navbar Item Animation (on page load) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-nav-links .nav-item {
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+/* Hamburger Menu */
+.navbar-toggler {
+  width: 40px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  z-index: 1100;
+}
+
+.navbar-toggler .bar {
+  width: 100%;
+  height: 4px;
+  background-color: #00ffcc;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+/* Hamburger Animation */
+.navbar-toggler.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar-toggler.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggler.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .custom-nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-nav-links .nav-link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* General Navbar Styles - Enhanced Glassmorphism */
+.custom-navbar {
+  background: rgba(115, 114, 114, 0.05); /* more transparent */
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(0, 0, 0, 0.2); /* subtle border for frosted edge */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* more depth */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 3.5rem;
+  transition: all 0.4s ease-in-out;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Navbar on Scroll */
+.custom-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.6); /* slightly darker glass effect */
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border-color: rgba(255, 255, 255, 0.15);
+}

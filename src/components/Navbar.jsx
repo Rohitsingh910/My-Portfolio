@@ -93,7 +93,7 @@ export default function Navbar() {
           {/* Resume Button */}
           <div className="hidden md:flex items-center gap-3">
             <motion.a
-              href={personalInfo.resume}
+              href={personalInfo.resume.startsWith('http') ? personalInfo.resume : `${import.meta.env.BASE_URL}${personalInfo.resume.replace(/^\//, '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="relative px-4 py-2 text-sm font-semibold text-cyan-400 border border-cyan-400/40 rounded-lg overflow-hidden group"
@@ -162,7 +162,7 @@ export default function Navbar() {
                 </motion.button>
               ))}
               <motion.a
-                href={personalInfo.resume}
+                href={personalInfo.resume.startsWith('http') ? personalInfo.resume : `${import.meta.env.BASE_URL}${personalInfo.resume.replace(/^\//, '')}`}
                 target="_blank"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}

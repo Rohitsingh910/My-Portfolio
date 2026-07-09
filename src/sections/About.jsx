@@ -124,7 +124,7 @@ shadow-[0_0_50px_rgba(34,211,238,0.35)]
 "
                     >
                       <img
-                        src={personalInfo.avatar}
+                        src={personalInfo.avatar.startsWith('http') ? personalInfo.avatar : `${import.meta.env.BASE_URL}${personalInfo.avatar.replace(/^\//, '')}`}
                         alt="Profile Pic"
                         className="w-full h-full object-cover object-center"
                       />

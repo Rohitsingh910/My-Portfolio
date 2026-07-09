@@ -248,7 +248,7 @@ export default function Hero() {
               </motion.button>
 
               <motion.a
-                href={personalInfo.resume}
+                href={personalInfo.resume.startsWith('http') ? personalInfo.resume : `${import.meta.env.BASE_URL}${personalInfo.resume.replace(/^\//, '')}`}
                 target="_Resume"
                 className="flex items-center gap-2 px-6 py-3 border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-white font-semibold text-sm rounded-lg transition-all duration-300"
                 whileHover={{ y: -2 }}

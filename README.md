@@ -160,4 +160,4 @@ git subtree push --prefix dist origin gh-pages
 git reset --hard HEAD~1
 ```
 
-Once the push completes, GitHub will automatically deploy the build and host your portfolio at **[https://rohitsingh910.github.io/My-Portfolio/](https://rohitsingh910.github.io/My-Portfolio/)**.
+Once the push completes, GitHub will automatically deploy the build and host your portfolio at **[https://my-portfolio-ashy-nine-n9oexdgay7.vercel.app/](https://my-portfolio-ashy-nine-n9oexdgay7.vercel.app/)**.
